@@ -2,11 +2,11 @@ import { createContext, PropsWithChildren, useContext } from "react"
 
 const HrefContext = createContext<string>(undefined as any)
 
-export interface HrefProviderProps {
+export interface UseHrefProviderProps {
   href: string
 }
 
-export function HrefProvider({ children, href }: PropsWithChildren<HrefProviderProps>) {
+export function UseHrefProvider({ children, href }: PropsWithChildren<UseHrefProviderProps>) {
   return <HrefContext.Provider value={href}>
     {children}
   </HrefContext.Provider>

@@ -2,11 +2,11 @@ import { createContext, PropsWithChildren, useContext } from "react"
 
 const PathnameContext = createContext<string>(undefined as any)
 
-export interface PathnameProviderProps {
+export interface UsePathnameProviderProps {
   pathname: string
 }
 
-export function PathnameProvider({ children, pathname }: PropsWithChildren<PathnameProviderProps>) {
+export function UsePathnameProvider({ children, pathname }: PropsWithChildren<UsePathnameProviderProps>) {
   return <PathnameContext.Provider value={pathname}>
     {children}
   </PathnameContext.Provider>

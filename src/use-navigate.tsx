@@ -17,11 +17,11 @@ interface NavigateFunction {
 
 const NavigateContext = createContext<NavigateFunction>(undefined as any)
 
-export interface NavigateProviderProps {
+export interface UseNavigateProviderProps {
   navigate: NavigateFunction
 }
 
-export function NavigateProvider({ children, navigate }: PropsWithChildren<NavigateProviderProps>) {
+export function UseNavigateProvider({ children, navigate }: PropsWithChildren<UseNavigateProviderProps>) {
   return <NavigateContext.Provider value={navigate}>
     {children}
   </NavigateContext.Provider>
