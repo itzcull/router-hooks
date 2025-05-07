@@ -8,9 +8,11 @@
   },
   "devDependencies": {
     "vite": "^6.3.2",
-    "vitest": "^3.1.2"
+    "vitest": "^3.1.2",
+    "typescript": "^5.0.0"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   }
 }
